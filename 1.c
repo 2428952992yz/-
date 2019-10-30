@@ -3,14 +3,13 @@ int main(void)
 {
     int a,b,c,e,x;
     float y;
+    printf("Enter a,b,c,e:\n");
+     scanf ("%d%d%d%d,&a,&b,&c,&e");
     x=a+b+c+e;
-    y=x/4;
-    printf("Enter a:\n");
-    printf("Enter b:\n");
-     printf("Enter c:\n");
-          printf("Enter e:\n");
-    scanf ("%d %d %d %d,&a,&b,&c,&e");
-    prinf("x=%d,y=%.1f",x,y);
+    y=x/4.0f;
+    
+    
+    printf("x=%d,y=%.1f",x,y);
     return 0;
 
 
