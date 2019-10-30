@@ -8,7 +8,7 @@ int main(void)
     x=a+b+c+e;
     y=x/4.0f;
     
-    
+     
     printf("x=%d,y=%.1f",x,y);
     return 0;
 
