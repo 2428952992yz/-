@@ -10,5 +10,6 @@ int main(void)
         a=-a;
 
     }
+    printf("a is %d.\n",a);
   return 0;
 }
