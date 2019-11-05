@@ -7,10 +7,10 @@ int main(void)
     if(a<=50){
            b=a*0.53;
     }else{
-        b=50*0.53+(a-50)*(0.53+0.05);
+        b=a*0.53+(a-50)*0.05;
     }
     printf("b is %f.\n",b);
-    return 0;1
+    return 0;
 }
 
 
