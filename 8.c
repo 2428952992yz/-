@@ -16,6 +16,6 @@ int main(void)
         c=10+7*2+(k-10)*3+t%5*2;
     }   
     c=(int)
-    printf("c=%d t=%d.\n",c,t);
+    printf("c=%d.\n",c);
     return 0;
 }
