@@ -3,7 +3,7 @@ int main(void)
 {
     int k,t;
     float c;
-    print("Enter k,t:\n" );
+    printf("Enter k,t:\n" );
     scanf("%d%d",&k,&t);
     if(k<=10){
        if(k<=3){
@@ -15,7 +15,7 @@ int main(void)
     else{
         c=10+7*2+(k-10)*3+t%5*2;
     }   
-    c=(int)(c+0.5);
+    c=(int)
     printf("c=%d t=%d.\n",c,t);
     return 0;
 }
