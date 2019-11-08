@@ -16,7 +16,7 @@ int main(void)
       
       
     
-        printf("Sorry!your number is smaller than my number");
+        printf("Sorry!your number is smaller than my number \n");
     
     
     return 0;
