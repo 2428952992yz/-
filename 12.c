@@ -22,6 +22,6 @@ int main(void){
         }
         printf("price=50.1f\n",price);
     }
-    printf("Thanks\n");
+        printf("Thanks\n");
     return 0;
 }
