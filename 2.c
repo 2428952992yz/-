@@ -3,7 +3,7 @@ int main(void)
 {
     double x, y;
     printf("Enter x(x>=0):\n");
-    scanf("%1f,&x");
+    scanf("%1f",&x);
     if (x<=15){
         y=4*x/3;
     }

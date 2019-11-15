@@ -3,7 +3,7 @@ int main(void)
 {
    float x;
    printf("Enter x:");
-   scanf("%f,&x");
+   scanf("%f",&x);
    if(x<60){
    
        printf("E\n");
