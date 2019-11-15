@@ -14,5 +14,5 @@ int main(void){
         denominator=denominator+2;
     }
     printf("sum=%f\n",sum);
-    return 0;
+    return 0;                        
 }
