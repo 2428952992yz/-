@@ -3,6 +3,7 @@ int main(void){
     int n,sum=0,term=0;
     printf("Enter n:\n");
     scanf("%d",&n);
+    if(n<0)n=-n;
     do{
         term=n%10;
         sum=sum+term;
