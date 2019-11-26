@@ -1,17 +1,18 @@
  #include<stdio.h>
  int main(void){
      int i,m;
-     int m=2;
      
+     for(m=2;m<=500;m++){
      for(i=2;i<=m/2;i++){ 
          if(m % i==0)
          break;
      }    
          if(i>=m/2 && m!=1){
-             printf("%d is a prime number!\n",m);
+             printf("%d\n",m);
          }
-         else
-         {
-             printf("No!\n");
-         }
+        
+         
+     }         
+         
        return 0;  
+ }     
