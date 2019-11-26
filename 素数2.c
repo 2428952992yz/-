@@ -1,8 +1,8 @@
-# include<stdio.h>
+ #include<stdio.h>
  int main(void){
      int i,m;
-     printf("Enter a number:");
-     scanf("%d",&m);
+     int m=2;
+     
      for(i=2;i<=m/2;i++){ 
          if(m % i==0)
          break;
@@ -15,8 +15,3 @@
              printf("No!\n");
          }
        return 0;  
- }     
- 
- 
-  
- 
