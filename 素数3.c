@@ -1,19 +1,34 @@
 #include<stdio.h>
+#include<stdio.h>
+int isPrime(int m){
+    int i,n;
+    if(m==1)return 0;
+    for(i=2;i<=n/2;i++)
+     if(n%i==0){
+         return 0;
+     }
+     return 1;
+}
 int main(void)
 {
-    int i, m,count;
+    int  m,count;
     count=0;
     for(m=2;m<500;m++){
-        for(i=1;i<=m/2;i++){
-            if(m%i==0)
-            break;
-            if(i>=m && m!=0)
-            printf("%5d",i);
+        if(isPrime(m)!=0){
+            printf(" 6%d",m);
             count++;
             if(count%10==0)printf("\n");
+        }
+            
+    }     
+    return 0;
+}  
+       
+    
+         
 
             
-        }
-    }
-    return 0;
-}
+        
+    
+    
+
