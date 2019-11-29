@@ -8,7 +8,7 @@
          break;
      }    
          if(i>=m/2 && m!=1){
-             printf("%5d\n",m);
+             printf("%5d",m);
          }
         
          

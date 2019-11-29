@@ -9,6 +9,11 @@ int main(void)
             break;
             if(i>=m && m!=0)
             printf("%5d",i);
+            count++;
+            if(count%10==0)printf("\n");
+
+            
         }
     }
+    return 0;
 }
