@@ -10,8 +10,8 @@ int max(int a,int b)
 int main(void)
 {
 int x,y;
-printf("Enter two number:\n");
+printf("Enter x and y:\n");
 scanf("%d%d", &x, &y);
-printf("Max is %lf\n",max(x,y));
+printf("Max is %d\n",max(x,y));
 return 0;
 }  
