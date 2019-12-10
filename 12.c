@@ -1,17 +1,26 @@
 #include<stdio.h>
+#define N 5
 int main(void)
 {
-    int i;
-    double average,sum=0;
-    int a[10];
-    printf("Enter 10 numbers");
-    for(i=0;i<10;i++)
+    int i,max;
+     int a[N];
+     max=a[0];
+    
+    printf("Enter 5 numbers");
+    for(i=0;i<N;i++)
     {
-        scanf("%d",&a[10]);
-        sum=sum+a[10];
+        scanf("%d",&a[N]);
     }
-    average=sum/10;
-    printf("average=%.2f\n",average);
-    printf(">average");
+    for(i=1;i<N;i++)
+    {
+       if(a[i]>max)
+         max=a[i];
+    } 
+        printf("%d",max);
+    
+       return 0;
+     
+}  
+   
+    
 
-}

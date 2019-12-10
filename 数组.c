@@ -1,13 +1,14 @@
 #include<stdio.h>
+#define N 5
 int main(void)
 {
-    int a[5],i;
+    int a[N],i;
     printf("Enter 5 numbers");
-    for(i=0;i<5;i++)
+    for(i=0;i<N;i++)
     {
         scanf("%d",&a[i]);
     }
-    for(i=4;i>=0;i--)
+    for(i=N-1;i>=0;i--)
     {
         printf("%5d",a[i]);
     }
