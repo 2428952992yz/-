@@ -1,5 +1,5 @@
 #include<stdio.h>
-int findmim(int a[],int n);
+int findmin(int a[],int n);
 int main(void)
 {
     int i,min;
@@ -9,19 +9,24 @@ int main(void)
     {
         scanf("%d",&a[i]);
     }
-    min=findmin(a,min);
+    min=findmin(a,5);
+
+    printf("min is %d",min);
+    return 0;
+    
 }    
-    int findmin(int a[])
+    int findmin(int a[],int n)
     {
         int i,min;
         min=0;
     for(i=1;i<5;i++)
     {
-       if(i<min)
+       if(a[i]<a[min])
        {
          min=i;
        }
     }
+    return a[min];
 }
 
 
