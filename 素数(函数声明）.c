@@ -1,7 +1,7 @@
 # include<stdio.h>
 #include<math.h>
 
-int isprime(int m);
+int isPrime(int m);
  
  int main(void){
      int i,m;
