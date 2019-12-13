@@ -5,7 +5,7 @@ int main(void)
     int a[10];
     printf("Enter a n:");
     scanf("%d",&n);
-    printf("Enter %d numbers");
+    printf("Enter % d numbers");
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
@@ -24,6 +24,10 @@ int main(void)
     }
     printf("After sorted:");
       for(i=0;i<n;i++)
-    
+      {
+          printf("%d",a[i]);
+      }
+      printf("\n");
+    return 0;
 
 }
