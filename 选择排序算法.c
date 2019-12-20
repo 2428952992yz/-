@@ -11,16 +11,17 @@ int main(void)
    
     for(i=0;i<4;i++) 
     {
-        
+        min=i;
         for(j=i+1;j<5;j++)
         {
-            if(a[j]<a[i])
+            if(a[j]<a[min])
             {
-             
-               temp=a[j];
-               a[j]=a[i];
-               a[i]=temp;
+                min=j;
             }
+               temp=a[min];
+               a[min]=a[i];
+               a[i]=temp;
+            
            
         } 
     }  
