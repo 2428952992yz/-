@@ -1,18 +1,20 @@
 #include<stdio.h>
 int main(void){
-    int i,n,denominator,flag;
-    double item,sum;
-    printf("Enter n:");
-    scanf("%d",&sum);
-    flag=1;
-    denominator=1;
-    sum=0;
-    for(i=1;i<=n;i++){
-        i=flag*1.0/denominator;
-        sum=sum+item;
-        flag=-flag;
-        denominator=denominator+2;
+    int i,j;
+    double sum,temp;
+       sum=0;
+    for(i=1;i<=100;i++)
+    {
+        temp=1;
+        for(j=1;j<=i;j++)
+        {
+       temp=temp*j;
+        }
+        sum=sum+1.0/temp;
     }
-    printf("sum=%f\n",sum);
-    return 0;                        
+    sum=sum+1; 
+
+    
+    printf("e is %f\n",sum);
+    return 0;
 }
