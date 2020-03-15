@@ -25,23 +25,22 @@ int main(void)
     scanf("%d",&stu[i].number);
     scanf("%d",&stu[i].date);
     }  
-    for(i=0;i<n-1;i++)
+    for(j=0;j<n;j++)
     {
-       int minindex=i;
-        for(j=i+1;j<n;j++)
+        for(i=0;i<n-1;i++)
         {
-            if(strcmp(stu[i].name, stu[j].name) >0 )
+            if(strcmp(stu[i].name, stu[i+1].name) >0 )
             {
                struct adress temp;
-               temp=stu[i];
-               stu[j]=stu[i];
+               temp=stu[i+1];
+               stu[i+1]=stu[i];
                stu[i]=temp;
             }
         }
     }
         for(i=0;i<n;i++)
         {
-            printf("name=%s,birthday=%d,number=%d\n",stu[i].name,stu[i].date,stu[i].number);
+            printf("name=%s,number=%d,birthday=%d\n",stu[i].name,stu[i].number,stu[i].date);
         }
         return 0;
 } 
