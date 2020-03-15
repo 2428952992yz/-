@@ -1,29 +1,18 @@
 #include<stdio.h>
 #include<string.h>
-struct birthday
+struct peo
 {
-    int year;
-    int month;
-    int day;
-};
-struct adress
-{
-  char name[10];
-  int number;
-  struct birthday date;
+    char name[10];
 };
 int main(void)
 {
-  struct adress stu[10];
-  int i,j,n;
-    scanf("%d",&n);
+    struct peo stu[10];
+    int i,j,n;
+     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
     printf("please name:\n");
     scanf("%s",&stu[i].name);
-     printf("please number:\n");
-    scanf("%d",&stu[i].number);
-    scanf("%d",&stu[i].date);
     }  
     for(i=0;i<n-1;i++)
     {
@@ -32,7 +21,7 @@ int main(void)
         {
             if(strcmp(stu[i].name, stu[j].name) >0 )
             {
-               struct adress temp;
+               struct peo temp;
                temp=stu[i];
                stu[j]=stu[i];
                stu[i]=temp;
@@ -41,7 +30,7 @@ int main(void)
     }
         for(i=0;i<n;i++)
         {
-            printf("name=%s,birthday=%d,number=%d\n",stu[i].name,stu[i].date,stu[i].number);
+            printf("name=%s\n",stu[i].name);
         }
         return 0;
 } 
