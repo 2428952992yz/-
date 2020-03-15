@@ -30,7 +30,7 @@ int main(void)
         minindex=i;
         for(j=i+1;j<n;j++)
         {
-            if(strcmp(stu[i].name,stu[j].name))
+            if(strcmp(stu[i].name,stu[j].name)>0)
             {
                struct adress temp;
                temp=stu[i];
@@ -38,6 +38,7 @@ int main(void)
                stu[i]=temp;
             }
         }
+    }
         for(i=0;i<n;i++)
         {
             printf("name=%s,birthday=%d,number=%d",stu[i].name,stu[i].date,stu[i].number);
