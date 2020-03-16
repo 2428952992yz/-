@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<string.h>
+#define MAXN 50
 struct stu
 {
     char no[10];
@@ -11,18 +13,18 @@ void output( STU*stu, int n);
 int update( STU*stu, int n);
 int main(void)
 {
-    STU stu[10];
+    STU stu[MAXN];
     int n;
     scanf("%d",&n);
     input(stu,n);
-    output(stu,n);
     update(stu,n);
+     output(stu,n);
 
     return 0;
 }
 void input( STU*stu, int n)
 {
-   int i;
+   
     int i;
     for(i=0;i<n;i++)
     {
