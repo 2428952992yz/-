@@ -1,4 +1,5 @@
-#include<stdio.h>
+
+  #include<stdio.h>
 #include<string.h>
 char* getmonth(int n);
 int main(void)
@@ -10,10 +11,6 @@ int main(void)
     {
     scanf("%d",&n);
     name=getmonth(n);
-    if(name==NULL){
-    printf("Wrong input!\n");
-    }
-    else printf("%s\n",name);
     }
 }
     char* getmonth(int n){
@@ -21,5 +18,4 @@ int main(void)
     if(n>=1&&n<=12)
         return month[n-1];
     else return NULL;
-}
-  
+    }
