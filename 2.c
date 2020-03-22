@@ -5,20 +5,24 @@ int main(void)
 {
     int repeat,i,j,n;
     char* name;
-    char* a[i];
+    char* a[j];
     char* m={"Wrong input!"};
     scanf("%d",&repeat);
     for(i=0;i<repeat;i++)
     {
     scanf("%d",&n);
     name=getmonth(n);
+    j=i;
     if(name==NULL){
-      name=m;
+      a[j]=m;
     }
-    else a[i]=name;
+    else a[j]=name;
     }
 
-    printf("%s\n",name);
+    for(j=0;j<repeat;j++)
+    {
+        printf("%s\n",a[j]);
+    }
 }
     char* getmonth(int n){
     char* month[20]={"January","February","March","April","May","June","July","August","September","October","November","December"};
@@ -27,4 +31,3 @@ int main(void)
     else return NULL;
 }
   
-
