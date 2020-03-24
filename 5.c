@@ -12,4 +12,4 @@ int main(void)
     mean[2*i]='\0';
     printf("%s\n",mean);
     return 0;
-}
+}   
