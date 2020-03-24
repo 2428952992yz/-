@@ -9,10 +9,21 @@ struct stu
 typedef struct stu NODE;
 NODE *Create_LinkList(void);
 void Display_LinkList(NODE*head);
+void Insert_LinkList(NODE*head,NODE*pnew,int i);
 int main(void)
 {
-    NODE *head;
+    NODE *head,*pnew;
     head=Create_LinkList();
+    Display_LinkList(head);
+    pnew=(NODE*)malloc(sizeof(NODE));
+    if(NULL==pnew)
+    {
+      return 1;
+    }
+    printf("please input insert:");
+    scanf("%d",&pnew->score);
+    pnew->next=NULL;
+    Insert_LinkList(head,pnew,i);
     Display_LinkList(head);
     return 0;
 }
@@ -54,5 +65,22 @@ void Display_LinkList(NODE*head)
   {
       printf("score=%d\n",p->score);
       p=p->next;
+  }
+}
+void Insert_LinkList(NODE*head,NODE*pnew,int i)
+{
+  NODE *p;
+  int j;
+  p=head;
+  for(j=0;j<i&&p!=NULL;j++)//将p指向要插入的第i个节点
+  {
+    p=p->next;
+    if(p==NULL)
+    {
+      printf("the %d node not foundt！\n",i);
+      return ;
+    }
+    pnew->next=p->next;
+    p->next=pnew;
   }
 }
