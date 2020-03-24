@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<malloc.h>
-NODE *Create_LinkList(void);
-void display_LinkList(NODE*head);
 struct stu
 {
     int score;
     struct stu *next;
 };
 typedef struct stu NODE;
+NODE *Create_LinkList(void);
+void Display_LinkList(NODE*head);
 int main(void)
 {
     NODE *head;
     head=Create_LinkList();
-    display_LinkList(head);
+    Display_LinkList(head);
     return 0;
 }
 NODE *Create_LinkList(void)
@@ -41,13 +41,13 @@ NODE *Create_LinkList(void)
    pnew->next=NULL;
    tail->next=pnew;
    tail=pnew;
-   return head;
-    }
 
+    }
+    return head;
 }
-void display_LinkList(NODE*head)
+void Display_LinkList(NODE*head)
 {
-  NODE*p;
+  NODE *p;
   p=head->next;
   while(p!=NULL)
   {
