@@ -23,7 +23,7 @@ int main(void)
     printf("please input insert:");
     scanf("%d",&pnew->score);
     pnew->next=NULL;
-    Insert_LinkList(head,pnew,i);
+    Insert_LinkList(head,pnew,);
     Display_LinkList(head);
     return 0;
 }
