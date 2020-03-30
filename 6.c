@@ -152,4 +152,28 @@ void Free_LinkList(NODE *head)
 }
 
 #endif
-
+NODE* Search_LinkList(NODE *head, int score)
+{
+    NODE *p;
+    while(p!=NULL)
+    {
+        if(p->score==score)
+        break;
+        else
+        p=p->next;
+    }
+    return p;
+}
+int  Update_LinkList(NODE *head, int oldscore, int newscore)
+{
+    NODE *p=NULL;
+    p=Search_LinkList(head,oldscore);
+    if(NULL == p)
+    {
+        printf("Sorry, NO found\n");
+        return 0;
+    }
+    p->score=newscore;
+    printf("Update Successfuly");
+    return 1;
+}
