@@ -8,12 +8,12 @@ struct Grade_Info
 typedef struct Grade_Info NODE;
 
 NODE *Create_LinkList(void);
-void Display_LinkList(NODE *head);//??
-void Free_LinkList(NODE *head);  //??
-void Insert_LinkList(NODE *head, NODE *pnew, int i);  //????i?????
-void Delete_LinkList(NODE *head, int i); //??i???
-NODE* Search_LinkList(NODE *head, int score); //?score??
-int  Update_LinkList(NODE *head, int oldscore, int newscore); //??score
+void Display_LinkList(NODE *head);
+void Free_LinkList(NODE *head);  
+void Insert_LinkList(NODE *head, NODE *pnew, int i); 
+void Delete_LinkList(NODE *head, int i); 
+NODE* Search_LinkList(NODE *head, int score); 
+int  Update_LinkList(NODE *head, int oldscore, int newscore); 
 
 int main(void)
 {
@@ -46,7 +46,7 @@ int main(void)
     Free_LinkList(head);
     return 0;
 }
-NODE *Create_LinkList(void) //????
+NODE *Create_LinkList(void) 
 {
     NODE *head, *tail, *pnew;
     int score;
@@ -92,15 +92,15 @@ void Insert_LinkList(NODE *head, NODE *pnew, int i)
   NODE *p;
   int j;
   p = head;
-  for (j = 0; j < i && p != NULL; j++)  //?p???????i???
+  for (j = 0; j < i && p != NULL; j++)  
       p = p->next;
-  if (p == NULL)  //??????i??????
+  if (p == NULL)  
   {
     printf ("the %d node not foundt!\n", i);
     return;
   }
-  pnew->next = p->next ;  //????????????i????????
-  p->next = pnew;        //??i?????????????
+  pnew->next = p->next ;  
+  p->next = pnew;      
 }
 void Delete_LinkList(NODE *head, int i)
 {
@@ -120,22 +120,7 @@ void Delete_LinkList(NODE *head, int i)
     p->next = q->next;
     free(q);
 }
-#if 0
-void Free_LinkList(NODE *head)
-{
-    NODE *p,*q;
-    if( NULL == head )
-        return;
-    p = head;
-    while(p!=NULL)
-    {
-        q=p->next;
-        printf("Free : score=%d\n",p->score);
-        free(p);
-        p = q;
-    }
-}
-#else
+
 void Free_LinkList(NODE *head)
 {
     NODE *p,*q;
@@ -151,7 +136,7 @@ void Free_LinkList(NODE *head)
     free(head);
 }
 
-#endif
+
 NODE* Search_LinkList(NODE *head, int score)
 {
     NODE *p;
